@@ -1,0 +1,86 @@
+name: PIGMEU LOCAL
+version: 1.0.0
+schema: v1
+models:
+  - name: Gemini 2.5 Flash
+    provider: gemini
+    model: gemini-2.5-flash
+    apiKey: AIzaSyAWVHTdYEQYNXhSIOhNGsUnJQyBtcP_2SI
+  - name: Gemini 2.5 Flash Lite
+    provider: gemini
+    model: gemini-2.5-flash-lite
+    apiKey: AIzaSyAWVHTdYEQYNXhSIOhNGsUnJQyBtcP_2SI
+  - name: GPT-4o
+    provider: azure
+    model: gpt-4.1-mini
+    apiKey: 6lz2oKsIAmyubEmRSzx0UjDH27EH0bFJOFB0KtgCt7DmG0fTsKzBJQQJ99CBACYeBjFXJ3w3AAABACOGiP5q
+    apiBase: https://agentic-a33.openai.azure.com/
+    roles:
+      - chat
+      - edit
+      - autocomplete
+    autocompleteOptions:
+      debounceDelay: 250
+      maxPromptTokens: 1024
+      onlyMyCode: true
+  - name: (mistral) Mistral Large
+    provider: mistral
+    model: mistral-large-latest
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+  - name: (mistral) Devstral Small
+    provider: mistral
+    model: devstral-small-latest
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+  - name: (mistral) Magistral Medium
+    provider: mistral
+    model: magistral-medium-latest
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+  - name: (mistral) Devstral Medium
+    provider: mistral
+    model: devstral-medium-latest
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+  - name: (mistral) Devstral Latest
+    provider: mistral
+    model: devstral-latest
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+  - name: (mistral) Codestral
+    provider: mistral
+    model: codestral-latest
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+    roles:
+      - chat
+      - edit
+      - autocomplete
+    autocompleteOptions:
+      debounceDelay: 250
+      maxPromptTokens: 1024
+      onlyMyCode: true
+  - name: (mistral) Mistral Small Creative
+    provider: mistral
+    model: labs-mistral-small-creative
+    apiKey: sb3SshNcayn6g1xL34a068BzAtFXyHQv
+  - name: (groq) llama-3.3-70b-versatile
+    provider: groq
+    model: llama-3.3-70b-versatile
+    apiKey: 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
+  - name: (groq) llama-4-scout-17b-16e-instruct
+    provider: groq
+    model: meta-llama/llama-4-scout-17b-16e-instruct
+    apiKey: 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
+  - name: (groq) kimi-k2-instruct
+    provider: groq
+    model: moonshotai/kimi-k2-instruct
+    apiKey: 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
+  - name: (groq) openai/gpt-oss-120b
+    provider: groq
+    model: openai/gpt-oss-120b
+    apiKey: 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
+  - name: (groq) openai/gpt-oss-20b
+    provider: groq
+    model: openai/gpt-oss-20b
+    apiKey: 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
+
+# MCP Servers that Continue can access
+# https://docs.continue.dev/customization/mcp-tools
+mcpServers:
+  - uses: anthropic/memory-mcp
