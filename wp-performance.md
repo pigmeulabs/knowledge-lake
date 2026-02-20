@@ -1,7 +1,7 @@
 # Contexto de Performance WordPress
 
 Este arquivo consolida o conhecimento dos documentos de referência anexados sobre performance em WordPress, incluindo práticas, comandos, ferramentas e links úteis.
-
+ 
 ---
 
 ## 1. Autoloaded Options
